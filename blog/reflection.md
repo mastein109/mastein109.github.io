@@ -1,5 +1,5 @@
 ##Live Site!!
-<a href="mastein109.github.io">The Blonde Coder</a>
+<a href="mastein109.github.io/index.html">The Blonde Coder</a>
 
 ##What did you learn about CSS padding, borders, and margin by doing this challenge?
 I learned that these attributes of the box model are very important. When it comes to positioning and layout, it is very important to have all of your margins set up properly, so that the page content will display the way you want it to. 
