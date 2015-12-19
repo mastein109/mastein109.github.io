@@ -1,0 +1,47 @@
+article {
+	margin-left: 15em;
+	position: absolute;
+	display: block;
+	margin-right: 15em;
+	color: teal;
+	font-family: cursive;
+	font-size: 1em;
+	float: left;
+}
+
+.heading {
+	color: pink;
+	font-family: American Typewriter, serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.user {
+	margin-left: 15em;
+	margin-right: 15em;
+	margin-top: 43em;
+	width: 10em;
+	position: absolute;
+}
+
+.replies {
+	display: block;
+	position: absolute;
+	margin-left: 20em;
+	margin-top: 78em;
+	font-family: cursive;
+	color: teal;
+	font-size: .75em;
+	border-right: 1px solid pink;
+	padding: 1em;
+}
+	
+
+aside {
+	margin-top: 3em;
+}
+
+i {
+	color: teal;
+	font-size: .8em;
+}
