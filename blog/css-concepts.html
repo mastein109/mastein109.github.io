@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/week2.css">
+
+    <title>Week 2</title>
+</head>
+
+<body>
+
+<header>
+  <img id="logo" src="/Users/Mollie/Documents/GitHub_Repos/mastein109.github.io/imgs/logo.png" alt="Logo">
+  <div class="script">Building a website is easy, designing one takes skill</div>
+  <div class="line"></div>
+</header>
+
+<!--sidebar for site navigation-->
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>  
+
+<!--This will be my post information-->
+   <content> 
+    <article>
+      <p class="heading">All About That Positioning!</p>
+      <i>December 20, 2015</i>
+        <p>The key to positioning in CSS is understanding the most basic concept; every single element within a page is a block. When you can envision a rectangle of pixels for each element, positioning becomes a lot easier. There are several different position attributes to learn about.</p>
+
+        <h3>1. Static</h3> 
+          <p>If you do not declare a position, the element will automatically asume the <b>default position, static.</b> Static doesn't really tell an element to act any different than to flow into the page as it normally would. This attribute becomes useful when you are trying to remove other positioning stuck to this element.</p>
+
+        <h3>2. Relative</h3>
+          <p>Contrary to popular belief, this type of positioning just means <b>relative to itself.</b> This type of position can become confusing. If you do not declare other attributes to the relative element, it will be the same as leaving it static. However, if you add top, bottom, left, or right, the element will adjust accordingly to where it would normally be positioned. For examplee, if you set an element to position: relative; and left: 10px; the element will move 10px to the right of where it normally would sit.</p> 
+        <h3>3. Absolute</h3>
+          <p>This type of positioning is very powerful and allows you to place any element exactly where you want it on a page. In addition to setting the position to absolute, you must add top, bottom, left, and right attributes to declare where you want the element placed. Although this is a very beneficial type of positioning, it comes along with cons. When you set an element to absolute, that element is removed from the natrual flow of elements within a page. It is not affected by other elements, nor does it affect any other elements. If this type of positioning is misused, it can disturb the whole entire flow of your site.</p>
+        <h3>4. Fixed</h3>
+          <p>This attribute to positioning is the least commonly used, but can be very helpful under certain circumstances. Fixed positioning will set an element relevant to the viewport. The viewport is a part of the webpage that stays in the same place, no matter what. For example, if a side menu is fixed on a page, it will stay fixed on the side and move with you when you scroll through. Although this is a neat concept and allows for certain elements to remain at all times, it can conflict with other elements. Depending on the size of a browser, a fixed element may overlap with other elements making it hard to read. In conclusion, if you choose fixed positioning, it is important to be cautious and test the page among several instances.</p>
+        <h3>Other Resources</h3>
+          <ul class="post">
+            <li><a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/">Learn CSS Positioning in 10 Steps</a></li>  
+          </ul>     
+    </article>
+</content>
+
+<!--This will prompt and allow user to enter input-->       
+    <content class="user">
+      <p class="heading">Leave a Reply!</p>
+       <form>
+          <i>Add a message...</i>
+          <input type="text" name="reply">
+        </form>
+    </content>
+
+<!--This will be where all of the past user replies will be listed-->
+    <content class="replies">
+      <img class="icon" src="../imgs/user.png" alt="User Picture">
+      <main>User Name</main>
+      <i>Reply Date</i>
+      <p><!--this is the reply post--></p>
+    </content>
+
+<!--sidebar displayed on every page-->
+
+    <section>
+      <aside>
+      <p class="title">All Posts</p>
+        <ul class="post">
+          <li><a href="git.html">Week 1</a></li>
+          <li><a href="css-concepts.html">Week 2</a></li>
+          <li><a href="#">Week 3</a></li>
+          <li><a href="#">Week 4</a></li>
+          <li><a href="#">Week 5</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <!--
+      How was it to wireframe and create an HTML page with a pair?
+        To my surprise, it worked out quite nicely. My pair and I were able to discuss what we wanted our wireframe to generally include and then put it into action. We determined who was stronger in designing and worked on a shared screen for the wireframe. Next, we switched roles, and the opposite person wrote the HTML code for our wireframe. While, one was driving, the other navigated by reading instructions and contributing input.
+
+      Did you find wireframing to be helpful to your development process?
+        Wireframing was definitely a huge help in the development process, especially in our case. Since we weren't sitting next to each other in person, it would be quite difficult, if not impossible to relay what we wanted to display through code. Wireframing before breaking down our blog post into code was an essential part of development.
+
+      What did you and your pair decide made a good wireframe? 
+        We started out with basic attributes for our blog page and then each input ideas of what else should be included. For example, we came up with links to connect through social media, including a user input box to follow our blog and receive regular updates, as well as an aesthetically plesing image and site title to be displayed throughout. 
+
+      What new semantic elements did you learn about (if any)?
+        Some new sematic elements I learned about were the article tag and the nav tag. Both were very impotant when creating our blog post code. We utilized the nav tag to present a menu of links to all the pages included on our site. 
+
+        <a href="https://github.com/mastein109/mastein109.github.io/blob/master/imgs/wireframe-blogs.png?raw=true">Wireframe Image</a>
+    -->
+    
+
+  </body> 
+</html>
