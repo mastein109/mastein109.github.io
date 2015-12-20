@@ -60,6 +60,7 @@ main p
 	padding: 2em;
 }
 
+
 aside {
 	display: block;
 	float: right;
@@ -72,6 +73,8 @@ aside {
 	text-align: left;
 	color: pink;
 	font-weight: bold;
+	position: relative;
+
 }
 
 .post {
