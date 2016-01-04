@@ -28,7 +28,7 @@ header {
 	position: absolute;
 	float: left;
 	font-size: 1em;
-	font-family: cursive;
+	font-family: American Typewriter, serif;
 	font-weight: bold;
 }
 
@@ -87,7 +87,7 @@ aside {
 
 .post li a {
 	padding: 1em;
-	font-family: cursive;
+	font-family: American Typewriter, serif;
 	color: teal;
 	text-align: right;
 	font-size: 14px;

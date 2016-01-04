@@ -4,7 +4,7 @@ article {
 	display: block;
 	margin-right: 15em;
 	color: teal;
-	font-family: cursive;
+	font-family: Georgia, serif;
 	font-size: 1em;
 	float: left;
 	padding: 1em;
@@ -31,13 +31,13 @@ article {
 	position: absolute;
 	margin-left: 15em;
 	margin-top: 78em;
-	font-family: cursive;
+	font-family: Georgia, serif;
 	color: teal;
 	font-size: .75em;
 	border-right: 1px solid pink;
 	padding: 1em;
 }
-	
+
 
 aside {
 	margin-top: 3em;
@@ -46,4 +46,16 @@ aside {
 i {
 	color: teal;
 	font-size: .8em;
+}
+
+.column-1 {
+	float: left;
+	display: inline-block;
+	width: 45%;
+}
+
+.column-2 {
+float: right;
+display: inline-block;
+width: 45%;
 }
