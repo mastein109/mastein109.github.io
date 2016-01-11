@@ -2,6 +2,10 @@ header {
 	clear: both;
 }
 
+code {
+	color: gray;
+}
+
 #logo {
 	display: block;
 	margin: auto;
