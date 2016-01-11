@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+
+  <title>Post 4</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+<header>
+  <img id="logo" src="imgs/logo.png" alt="Logo">
+  <div class="script">Building a website is easy, designing one takes skill</div>
+  <div class="line"></div>
+</header>
+
+<!--sidebar for site navigation-->
+    <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+<!--This will be my post information-->
+<content>
+<article>
+      <p class="heading">What the Enumerable#</p>
+      <i>January 11, 2016</i>
+      <h3>Enumberables</h3>
+      <p>
+        The <code>Enumerable</code> module in Ruby is a collection of objects that have many characteristics in common. Further, Enumerable inclue several methods that are similar to <code>each</code>, in that they iterate through the whole collection and return elements from it.
+      </p>
+      <h3>The cycle method</h3>
+       <p>
+          <code>Enumberable#cycle</code> iterates through all elements of a collection in a loop again and again. The <code>cycle</code> method will loop infinitely, unless told otherwise. In order, to stop the infinite looping, an integer can be provided as an argument. See below for a visual example.
+      </p>
+      <p>
+        <script src="https://gist.github.com/mastein109/e57b780b5331443019b4.js"></script>
+      </p>
+      <p>
+        In line 1 of the code block, you will see a list of elements (in this case a few Ruby languages) defined. In line 2, the <code>cycle</code> method is called without any arguments. Therefore, the list will be printed infinitely. Finally, in line 3, the <code>cycle</code> method is called with an argument of integer 2. As shown, the list of elements will be printed twice and then end the <code>cycle</code> method.
+      </p>
+
+  </article>
+</content>
+
+<!--This will prompt and allow user to enter input-->
+
+    <content class="user">
+      <p class="heading">Leave a Reply!</p>
+       <form>
+          <i>Add a message...</i>
+          <input type="text" name="reply">
+        </form>
+    </content>
+
+<!--This will be where all of the past user replies will be listed-->
+    <content class="replies">
+      <img class="icon" src="../imgs/user.png" alt="User Picture">
+      <main>User Name</main>
+      <i>Reply Date</i>
+      <p><!--this is the reply post--></p>
+    </content>
+
+<!--sidebar displayed on every page-->
+
+    <section>
+      <aside>
+      <p class="title">All Posts</p>
+        <ul class="post">
+          <li><a href="git.html">Post 1</a></li>
+          <li><a href="css-concepts.html">Post 2</a></li>
+          <li><a href="array-hashes.html">Post 3</a></li>
+          <li><a href="enumerable-methods.html">Post 4</a></li>
+          <li><a href="#">Post 5</a></li>
+        </ul>
+      </aside>
+    </section>
+
+
+</main>
