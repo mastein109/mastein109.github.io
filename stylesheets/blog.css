@@ -18,19 +18,19 @@ article {
 }
 
 .user {
+	display: inline;
+	position: absolute;
 	margin-left: 15em;
 	margin-right: 15em;
-	margin-top: 43em;
+	margin-top: 140em;
 	width: 10em;
-	position: absolute;
 	padding: 1em;
 }
 
 .replies {
-	display: block;
 	position: absolute;
 	margin-left: 15em;
-	margin-top: 78em;
+	margin-top: 120em;
 	font-family: Georgia, serif;
 	color: teal;
 	font-size: .75em;
