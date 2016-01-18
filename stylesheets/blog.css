@@ -22,13 +22,13 @@ article {
 	margin-right: 15em;
 	margin-bottom: length;
 	width: 10em;
-	position: absolute;
+	position: fixed;
 	padding: 1em;
 }
 
 .replies {
 	display: block;
-	position: absolute;
+	position: fixed;
 	margin-left: 15em;
 	margin-bottom: length;
 	font-family: Georgia, serif;
