@@ -36,77 +36,19 @@
         The best way to demonstrate how a class works is to provide an example. The example I am going to use will allow for my puppy to be fed and taken out based on how she is responding.
       </p>
 
-<pre><code>
-    class Puppy
-        def initialize(name)
-          @name = name
-            puts "#{@name} has awoken!"
-          end
-    end
+<script src="https://gist.github.com/mastein109/70c9e1aa5d141374f32f.js"></script>
 
-    #Create subclass of puppy to define puppy tasks to be done
-    class Puppy_Tasks < Puppy
 
-        def feed(hungry)
-          @hungry = hungry
-          if @hungry == "no"
-            puts "#{@name} is full!"
-          else @hungry == "yes"
-          puts "Feed #{@name} two cups of kibble."
-          end
-        end
+<p>Now that we have created a class, subclass, instance variables, and methods that work on those variables, we can type driver code to test our program.</p>
 
-        def walk
-          if @hungry == "no"
-            puts "Take #{@name} on a walk to go to the bathroom"
-          else @hungry == "yes"
-            puts "Play fetch with #{@name}"
-          end
-        end
+<script src="https://gist.github.com/mastein109/a28bee9bb5fed0d491cd.js"></script>
 
-        def sleepy(tired)
-          @tired = tired
-          if @tired == "no"
-            puts "Walk #{@name} around the block."
-          else @tired == "yes"
-            puts "#{@name} is a sleepy, snoring baby."
-          end
-        end
-      end
+<p>Below are the results that are printed to the console when we call the commands, with the specific arguments above. </p>
 
-<p>Now that we have defined our Class Puppy and different methods with instance variables, we can test the program out. Here are the commands to call the class and its methods.</p>
-
-<pre><code>
-  puppy = Puppy_Tasks.new "Charlie"
-
-  puppy.feed("yes")
-  puppy.walk
-  puppy.feed("no")
-  puppy.walk
-  puppy.sleepy("yes")
-
-</code></pre>
+<script src="https://gist.github.com/mastein109/aec8fb55b9ac942a499d.js"></script>
 
 </article>
 </content>
-
-<!--This will prompt and allow user to enter input-->
-
-    <content class="user">
-      <p class="heading">Leave a Reply!</p>
-       <form>
-          <i>Add a message...</i>
-          <input type="text" name="reply">
-        </form>
-    </content>
-
-<!--This will be where all of the past user replies will be listed-->
-    <content class="replies">
-      <img class="icon" src="../imgs/user.png" alt="User Picture">
-      <main>User Name</main>
-      <i>Reply Date</i>
-      <p><!--this is the reply post--></p>
-    </content>
 
 <!--sidebar displayed on every page-->
 

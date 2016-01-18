@@ -23,6 +23,7 @@ article {
 	margin-left: 15em;
 	margin-right: 15em;
 	margin-top: 140em;
+	margin-bottom: 0em;
 	width: 10em;
 	padding: 1em;
 }
@@ -31,6 +32,7 @@ article {
 	position: absolute;
 	margin-left: 15em;
 	margin-top: 120em;
+	margin-bottom: 0em;
 	font-family: Georgia, serif;
 	color: teal;
 	font-size: .75em;
