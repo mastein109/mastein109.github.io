@@ -18,19 +18,20 @@ article {
 }
 
 .user {
+  display: block;
 	margin-left: 15em;
 	margin-right: 15em;
-	margin-bottom: length;
+	margin-bottom: 0px;
+  margin-top: 200em;
 	width: 10em;
-	position: fixed;
 	padding: 1em;
 }
 
 .replies {
-	display: block;
-	position: fixed;
+  display: block;
 	margin-left: 15em;
-	margin-bottom: length;
+  margin-bottom: 0px;
+  margin-top: 200em;
 	font-family: Georgia, serif;
 	color: teal;
 	font-size: .75em;
@@ -40,7 +41,9 @@ article {
 
 
 aside {
+  clear: both;
 	margin-top: 3em;
+  float: right;
 }
 
 i {
