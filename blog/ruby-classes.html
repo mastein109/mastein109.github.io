@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+
+  <title>Post 5</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+<header>
+  <img id="logo" src="../imgs/logo.png" alt="Logo">
+  <div class="script">Building a website is easy, designing one takes skill</div>
+  <div class="line"></div>
+</header>
+
+<!--sidebar for site navigation-->
+    <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About Me</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+<!--This will be my post information-->
+<content>
+<article>
+      <p class="heading">Ruby Classes</p>
+      <i>January 18, 2016</i>
+      <p>
+        Classes are used in Ruby to group together similar objects. Classes include variables that are associated with a specified instance of the class, and methods work with those variables to do something. Classes are defined by using the word "class" followed by a Class_Name. There is one parent class which inherits the methods defined within and can contain a number of child classes.
+      </p>
+      <p>
+        The best way to demonstrate how a class works is to provide an example. The example I am going to use will allow for my puppy to be fed and taken out based on how she is responding.
+      </p>
+
+<pre><code>
+    class Puppy
+        def initialize(name)
+          @name = name
+            puts "#{@name} has awoken!"
+          end
+    end
+
+    #Create subclass of puppy to define puppy tasks to be done
+    class Puppy_Tasks < Puppy
+
+        def feed(hungry)
+          @hungry = hungry
+          if @hungry == "no"
+            puts "#{@name} is full!"
+          else @hungry == "yes"
+          puts "Feed #{@name} two cups of kibble."
+          end
+        end
+
+        def walk
+          if @hungry == "no"
+            puts "Take #{@name} on a walk to go to the bathroom"
+          else @hungry == "yes"
+            puts "Play fetch with #{@name}"
+          end
+        end
+
+        def sleepy(tired)
+          @tired = tired
+          if @tired == "no"
+            puts "Walk #{@name} around the block."
+          else @tired == "yes"
+            puts "#{@name} is a sleepy, snoring baby."
+          end
+        end
+      end
+
+<p>Now that we have defined our Class Puppy and different methods with instance variables, we can test the program out. Here are the commands to call the class and its methods.</p>
+
+<pre><code>
+  puppy = Puppy_Tasks.new "Charlie"
+
+  puppy.feed("yes")
+  puppy.walk
+  puppy.feed("no")
+  puppy.walk
+  puppy.sleepy("yes")
+
+</code></pre>
+
+</article>
+</content>
+
+<!--This will prompt and allow user to enter input-->
+
+    <content class="user">
+      <p class="heading">Leave a Reply!</p>
+       <form>
+          <i>Add a message...</i>
+          <input type="text" name="reply">
+        </form>
+    </content>
+
+<!--This will be where all of the past user replies will be listed-->
+    <content class="replies">
+      <img class="icon" src="../imgs/user.png" alt="User Picture">
+      <main>User Name</main>
+      <i>Reply Date</i>
+      <p><!--this is the reply post--></p>
+    </content>
+
+<!--sidebar displayed on every page-->
+
+    <section>
+      <aside>
+      <p class="title">All Posts</p>
+        <ul class="post">
+          <li><a href="git.html">Post 1</a></li>
+          <li><a href="css-concepts.html">Post 2</a></li>
+          <li><a href="array-hashes.html">Post 3</a></li>
+          <li><a href="enumerable-methods.html">Post 4</a></li>
+          <li><a href="ruby-classes.html">Post 5</a></li>
+        </ul>
+      </aside>
+    </section>
+
+
+</main>
