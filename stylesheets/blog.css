@@ -22,7 +22,7 @@ article {
 	margin-left: 15em;
 	margin-right: 15em;
 	margin-bottom: 0px;
-  margin-top: 200em;
+  margin-top: 160em;
 	width: 10em;
 	padding: 1em;
 }
@@ -31,7 +31,7 @@ article {
   display: block;
 	margin-left: 15em;
   margin-bottom: 0px;
-  margin-top: 200em;
+  margin-top: 150em;
 	font-family: Georgia, serif;
 	color: teal;
 	font-size: .75em;
@@ -41,9 +41,8 @@ article {
 
 
 aside {
-  clear: both;
 	margin-top: 3em;
-  float: right;
+	float: right;
 }
 
 i {
