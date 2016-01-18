@@ -20,7 +20,7 @@ article {
 .user {
 	margin-left: 15em;
 	margin-right: 15em;
-	margin-bottom: 0em;
+	margin-bottom: length;
 	width: 10em;
 	position: absolute;
 	padding: 1em;
@@ -30,7 +30,7 @@ article {
 	display: block;
 	position: absolute;
 	margin-left: 15em;
-	margin-bottom: 0em;
+	margin-bottom: length;
 	font-family: Georgia, serif;
 	color: teal;
 	font-size: .75em;
