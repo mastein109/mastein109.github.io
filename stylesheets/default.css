@@ -19,7 +19,7 @@ code {
 	font-family: American Typewriter, serif;
 }
 
-.project li a:hover {
+.project a:hover {
 	color: teal;
 }
 
