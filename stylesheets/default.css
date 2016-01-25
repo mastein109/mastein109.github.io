@@ -17,6 +17,7 @@ code {
 	color: white;
 	background-color: pink;
 	font-family: American Typewriter, serif;
+	padding: 1em;
 }
 
 .project a:hover {
