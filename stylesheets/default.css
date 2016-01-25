@@ -11,7 +11,7 @@ code {
 	margin: auto;
 }
 
-.project {
+.project li a {
 	font-size: 1em;
 	text-align: center;
 	color: white;
