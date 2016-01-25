@@ -11,6 +11,13 @@ code {
 	margin: auto;
 }
 
+#project {
+	font-size: 1em;
+	text-align: center;
+	color: white;
+	background-color: pink;
+}
+
 .script {
 	font-weight: bold;
 	font-size: 1em;
