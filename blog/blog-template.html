@@ -1,85 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
-    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
-
-    <title>Post </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "../css/bootstrap.min.css" rel= "stylesheet" type = "text/css">
+    <link href = "../css/styles.css" rel= "stylesheet" type = "text/css">
+    <title></title>
 </head>
 
 <body>
+<div class="navbar navbar-default navbar-static-top">
+        <div class = "container">
+          <div class = "navbar-header"><a href = "../index.html" class = "navbar-brand">The Blonde Coder</a>
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+            </button>
+           </div>
+            <div class = "collapse navbar-collapse .navHeaderCollapse">
+              <ul class = "nav navbar-nav navbar-right">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li class = "active"><a href="../blog-index.html">Blog</a></li>
+                <li><a href="../project-index.html">Portfolio</a></li>
+                <li><a href="#contact" data-toggle = "modal">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
 
-<header>
-  <img id="logo" src="../imgs/logo.png" alt="Logo">
-  <div class="script">Building a website is easy, designing one takes skill</div>
-  <div class="line"></div>
-</header>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-lg-9">
+      <div class = "panel panel-default">
+        <div class = "panel-body"
+          <div class="page-header">
+            <h3>Title <br><small>Date</small></h3>
+            <p>
 
-<!--sidebar for site navigation-->
-    <ul class="menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About Me</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="../projects/index.html">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+            </p>
 
-<!--This will be my post information-->
-    <article>
-      <p class="heading"><!--Insert post heading--></p>
-      <i><!--Insert Date of Post--></i>
-        <p><!--This is the actual post--></p>
-    </article>
 
-<!--This will prompt and allow user to enter input-->
-    <content class="user">
-      <p class="heading">Leave a Reply!</p>
-       <form>
-          <i>Add a message...</i>
-          <input type="text" name="reply">
-        </form>
-    </content>
+          </div>
+        </div>
+      </div>
 
-<!--This will be where all of the past user replies will be listed-->
-    <content class="replies">
-      <img class="icon" src="../imgs/user.png" alt="User Picture">
-      <main>User Name</main>
-      <i>Reply Date</i>
-      <p><!--this is the reply post--></p>
-    </content>
+    <div class = "col-lg-3">
+      <div class = "page-header">
+        <h4>Blog Posts</h4>
+      </div>
 
-<!--sidebar displayed on every page-->
+      <div class = "list-group">
 
-    <section>
-      <aside>
-      <p class="title">All Posts</p>
-        <ul class="post">
-          <li><a href="git.html">Git</a></li>
-          <li><a href="css-concepts.html">CSS Concepts</a></li>
-          <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
-          <li><a href="enumerable-methods.html">Enumerable Methods</a></li>
-          <li><a href="ruby-classes.html">Ruby Classes</a></li>
-          <li><a href="JavaScript.html">JavaScript vs. Ruby</a></li>
-          <li><a href="tech.html">What is Rails?</a></li>
-        </ul>
-      </aside>
-    </section>
+        <a href = "git.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Git</h4>
+            <p>Learn about Git!</p>
+        </a>
+      <a href = "css-concepts.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">CSS Concepts</h4>
+            <p>Learn about CSS Concepts!</p>
+        </a>
+      <a href = "arrays-hashes.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Arrays vs. Hashes</h4>
+            <p>Learn about the difference between Arrays and Hashes!</p>
+        </a>
+      <a href = "enumerable-methods.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Enumerable Methods</h4>
+            <p>Learn about Enumerable Methods!</p>
+        </a>
+      <a href = "ruby-classes.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Ruby Classes</h4>
+            <p>Learn about Ruby Classes!</p>
+        </a>
+      <a href = "JavaScript.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">JavaScript</h4>
+            <p>Learn about JavaScript!</p>
+        </a>
+      <a href = "tech.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">What is Rails?</h4>
+            <p>Learn about Ruby and Ruby on Rails!</p>
+      </a>
 
-    <!--
-      How was it to wireframe and create an HTML page with a pair?
-        To my surprise, it worked out quite nicely. My pair and I were able to discuss what we wanted our wireframe to generally include and then put it into action. We determined who was stronger in designing and worked on a shared screen for the wireframe. Next, we switched roles, and the opposite person wrote the HTML code for our wireframe. While, one was driving, the other navigated by reading instructions and contributing input.
 
-      Did you find wireframing to be helpful to your development process?
-        Wireframing was definitely a huge help in the development process, especially in our case. Since we weren't sitting next to each other in person, it would be quite difficult, if not impossible to relay what we wanted to display through code. Wireframing before breaking down our blog post into code was an essential part of development.
+      </div>
+    </div>
+  </div>
+</div>
 
-      What did you and your pair decide made a good wireframe?
-        We started out with basic attributes for our blog page and then each input ideas of what else should be included. For example, we came up with links to connect through social media, including a user input box to follow our blog and receive regular updates, as well as an aesthetically plesing image and site title to be displayed throughout.
 
-      What new semantic elements did you learn about (if any)?
-        Some new sematic elements I learned about were the article tag and the nav tag. Both were very impotant when creating our blog post code. We utilized the nav tag to present a menu of links to all the pages included on our site.
 
-        <a href="https://github.com/mastein109/mastein109.github.io/blob/master/imgs/wireframe-blogs.png?raw=true">Wireframe Image</a>
-    -->
+
+    <div class = "navbar navbar-default navbar-static-bottom">
+        <div class = "container">
+          <p class = "navbar-text pull-left">Site built by Mollie Ann Stein</p>
+        </div>
+    </div>
 
 
   </body>

@@ -1,0 +1,31 @@
+input[type="button"]:focus,
+input[type="submit"]:focus {
+  outline: none !important;
+} /*forms*/
+
+a.focus {
+  outline: none !important;
+}
+
+body  {
+  margin-bottom: 80px;
+}
+
+.page-header {
+  margin-top: 0;
+}
+
+.panel-body {
+  padding-top: 0;
+}
+
+img.icon {
+  width: 20%;
+  height: 20%;
+  padding: 1em;
+}
+
+img.about {
+  width: 15%;
+  height: 15%;
+}

@@ -1,71 +1,113 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
-  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
-
-  <title>Post 5</title>
-  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "../css/bootstrap.min.css" rel= "stylesheet" type = "text/css">
+    <link href = "../css/styles.css" rel= "stylesheet" type = "text/css">
+    <title>Ruby Classes</title>
 </head>
 
 <body>
+<div class="navbar navbar-default navbar-static-top">
+        <div class = "container">
+          <div class = "navbar-header"><a href = "../index.html" class = "navbar-brand">The Blonde Coder</a>
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+            </button>
+           </div>
+            <div class = "collapse navbar-collapse .navHeaderCollapse">
+              <ul class = "nav navbar-nav navbar-right">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li class = "active"><a href="../blog-index.html">Blog</a></li>
+                <li><a href="../project-index.html">Portfolio</a></li>
+                <li><a href="#contact" data-toggle = "modal">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
 
-<header>
-  <img id="logo" src="../imgs/logo.png" alt="Logo">
-  <div class="script">Building a website is easy, designing one takes skill</div>
-  <div class="line"></div>
-</header>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-lg-9">
+      <div class = "panel panel-default">
+        <div class = "panel-body"
+          <div class="page-header">
+            <h3>Ruby Classes<br><small><i>January 18, 2016</i></small></h3>
 
-<!--sidebar for site navigation-->
-    <ul class="menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About Me</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="../projects/index.html">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
 
-<!--This will be my post information-->
-<content>
-<article>
-      <p class="heading">Ruby Classes</p>
-      <i>January 18, 2016</i>
-      <p>
-        Classes are used in Ruby to group together similar objects. Classes include variables that are associated with a specified instance of the class, and methods work with those variables to do something. Classes are defined by using the word "class" followed by a Class_Name. There is one parent class which inherits the methods defined within and can contain a number of child classes.
-      </p>
-      <p>
-        The best way to demonstrate how a class works is to provide an example. The example I am going to use will allow for my puppy to be fed and taken out based on how she is responding.
-      </p>
+          <p>Classes are used in Ruby to group together similar objects. Classes include variables that are associated with a specified instance of the class, and methods work with those variables to do something. Classes are defined by using the word "class" followed by a Class_Name. There is one parent class which inherits the methods defined within and can contain a number of child classes.</p>
+
+          <p>The best way to demonstrate how a class works is to provide an example. The example I am going to use will allow for my puppy to be fed and taken out based on how she is responding.</p>
 
 <script src="https://gist.github.com/mastein109/70c9e1aa5d141374f32f.js"></script>
 
-
-<p>Now that we have created a class, subclass, instance variables, and methods that work on those variables, we can type driver code to test our program.</p>
+          <p>Now that we have created a class, subclass, instance variables, and methods that work on those variables, we can type driver code to test our program.</p>
 
 <script src="https://gist.github.com/mastein109/a28bee9bb5fed0d491cd.js"></script>
 
-<p>Below are the results that are printed to the console when we call the commands, with the specific arguments above. </p>
+          <p>Below are the results that are printed to the console when we call the commands, with the specific arguments above. </p>
 
 <script src="https://gist.github.com/mastein109/aec8fb55b9ac942a499d.js"></script>
+        </div>
+      </div>
+    </div>
 
-</article>
-</content>
+<div class = "col-lg-3">
+      <div class = "page-header">
+        <h4>Blog Posts</h4>
+      </div>
 
-<!--sidebar displayed on every page-->
+      <div class = "list-group">
 
-    <section>
-      <aside>
-      <p class="title">All Posts</p>
-        <ul class="post">
-          <li><a href="git.html">Git</a></li>
-          <li><a href="css-concepts.html">CSS Concepts</a></li>
-          <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
-          <li><a href="enumerable-methods.html">Enumerable Methods</a></li>
-          <li><a href="ruby-classes.html">Ruby Classes</a></li>
-          <li><a href="JavaScript.html">JavaScript vs. Ruby</a></li>
-          <li><a href="tech.html">What is Rails?</a></li>
-        </ul>
-      </aside>
-    </section>
+        <a href = "git.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Git</h4>
+            <p>Learn about Git!</p>
+        </a>
+      <a href = "css-concepts.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">CSS Concepts</h4>
+            <p>Learn about CSS Concepts!</p>
+        </a>
+      <a href = "arrays-hashes.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Arrays vs. Hashes</h4>
+            <p>Learn about the difference between Arrays and Hashes!</p>
+        </a>
+      <a href = "enumerable-methods.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Enumerable Methods</h4>
+            <p>Learn about Enumerable Methods!</p>
+        </a>
+      <a href = "ruby-classes.html" class = "list-group-item active">
+          <h4 class = "list-group-item-heading">Ruby Classes</h4>
+            <p>Learn about Ruby Classes!</p>
+        </a>
+      <a href = "JavaScript.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">JavaScript</h4>
+            <p>Learn about JavaScript!</p>
+        </a>
+      <a href = "tech.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">What is Rails?</h4>
+            <p>Learn about Ruby and Ruby on Rails!</p>
+      </a>
 
 
-</main>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <div class = "navbar navbar-default navbar-static-bottom">
+        <div class = "container">
+          <p class = "navbar-text pull-left">Site built by Mollie Ann Stein</p>
+        </div>
+    </div>
+
+
+  </body>
+</html>
+
+
+
