@@ -1,63 +1,106 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
-  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
-
-  <title>Post 1</title>
-  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "../css/bootstrap.min.css" rel= "stylesheet" type = "text/css">
+    <link href = "../css/styles.css" rel= "stylesheet" type = "text/css">
+    <title>Git</title>
 </head>
 
 <body>
+<div class="navbar navbar-default navbar-static-top">
+        <div class = "container">
+          <div class = "navbar-header"><a href = "../index.html" class = "navbar-brand">The Blonde Coder</a>
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+            </button>
+           </div>
+            <div class = "collapse navbar-collapse .navHeaderCollapse">
+              <ul class = "nav navbar-nav navbar-right">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li class = "active"><a href="../blog-index.html">Blog</a></li>
+                <li><a href="../project-index.html">Portfolio</a></li>
+                <li><a href="#contact" data-toggle = "modal">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
 
-<header>
-  <img id="logo" src="../imgs/logo.png" alt="Logo">
-  <div class="script">Building a website is easy, designing one takes skill</div>
-  <div class="line"></div>
-</header>
-
-<!--sidebar for site navigation-->
-    <ul class="menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About Me</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="../projects/index.html">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-
-<!--This will be my post information-->
-<content>
-<article>
-      <p class="heading">The Journey Begins</p>
-      <i>December 6, 2015</i>
-      <p>
-        This week during DBC Phase 0, I learned and explored the command line and version control. Version control is very beneficial to developers for many reasons. Version control software allows you to perform baisc tasks, such as creating, saving, and editing a document, but doesn't stop there. VCS allows for several developers to work on the same project and even the same file at the same time without overwriting anyone else's work! This prevents errors and possible destruction of files, which is essential to avoid. In addition, version control software is able to track changes from all developers, so everyone can see who edited the file, where it was edited, and what was edited.
-      </p>
-      <p>
-        Git is very helpful when it comes to tracking changes. Git uses the command commit, which bundles the changes you have made and allows you to add a message to see a quick explanation on what you have done/changed. Git also saves revision history, so you are able to easily see a log of the changes that you have made within the particular project. Changes that are tracked can range from typos, bug fixes, or even adding a whole new page to your project. Finally, tracking changes helps you understand the evolution of your project.
-      </p>
-      <p>
-        Git is important for developers when working individually, but is not exactly beneficial for a group of developers. That is where GitHub comes in. The difference between Git and GitHub is simply the difference of local and remote storage. GitHub acts as a remote branch for developers to store his or her work, so that it can be accessed remotely, anywhere and by anyone. GitHub creates a copy of your original file and is an open source environment for other developers to edit, revise, and add to your work.
-      </p>
-  </article>
-</content>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-lg-9">
+      <div class = "panel panel-default">
+        <div class = "panel-body"
+          <div class="page-header">
+            <h3>The Journey Begins<br><small><i>December 6, 2015</i></small></h3>
 
 
-<!--sidebar displayed on every page-->
+            <p>This week during DBC Phase 0, I learned and explored the command line and version control. Version control is very beneficial to developers for many reasons. Version control software allows you to perform baisc tasks, such as creating, saving, and editing a document, but doesn't stop there. VCS allows for several developers to work on the same project and even the same file at the same time without overwriting anyone else's work! This prevents errors and possible destruction of files, which is essential to avoid. In addition, version control software is able to track changes from all developers, so everyone can see who edited the file, where it was edited, and what was edited.</p>
 
-    <section>
-      <aside>
-      <p class="title">All Posts</p>
-        <ul class="post">
-          <li><a href="git.html">Git</a></li>
-          <li><a href="css-concepts.html">CSS Concepts</a></li>
-          <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
-          <li><a href="enumerable-methods.html">Enumerable Methods</a></li>
-          <li><a href="ruby-classes.html">Ruby Classes</a></li>
-          <li><a href="JavaScript.html">JavaScript vs. Ruby</a></li>
-          <li><a href="tech.html">What is Rails?</a></li>
-        </ul>
-      </aside>
-    </section>
+            <p>Git is very helpful when it comes to tracking changes. Git uses the command commit, which bundles the changes you have made and allows you to add a message to see a quick explanation on what you have done/changed. Git also saves revision history, so you are able to easily see a log of the changes that you have made within the particular project. Changes that are tracked can range from typos, bug fixes, or even adding a whole new page to your project. Finally, tracking changes helps you understand the evolution of your project.</p>
+
+            <p>Git is important for developers when working individually, but is not exactly beneficial for a group of developers. That is where GitHub comes in. The difference between Git and GitHub is simply the difference of local and remote storage. GitHub acts as a remote branch for developers to store his or her work, so that it can be accessed remotely, anywhere and by anyone. GitHub creates a copy of your original file and is an open source environment for other developers to edit, revise, and add to your work.</p>
+
+        </div>
+      </div>
+    </div>
+
+   <div class = "col-lg-3">
+      <div class = "page-header">
+        <h4>Blog Posts</h4>
+      </div>
+
+      <div class = "list-group">
+
+        <a href = "git.html" class = "list-group-item active">
+          <h4 class = "list-group-item-heading">Git</h4>
+            <p>Learn about Git!</p>
+        </a>
+      <a href = "css-concepts.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">CSS Concepts</h4>
+            <p>Learn about CSS Concepts!</p>
+        </a>
+      <a href = "arrays-hashes.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Arrays vs. Hashes</h4>
+            <p>Learn about the difference between Arrays and Hashes!</p>
+        </a>
+      <a href = "enumerable-methods.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Enumerable Methods</h4>
+            <p>Learn about Enumerable Methods!</p>
+        </a>
+      <a href = "ruby-classes.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Ruby Classes</h4>
+            <p>Learn about Ruby Classes!</p>
+        </a>
+      <a href = "JavaScript.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">JavaScript</h4>
+            <p>Learn about JavaScript!</p>
+        </a>
+      <a href = "tech.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">What is Rails?</h4>
+            <p>Learn about Ruby and Ruby on Rails!</p>
+      </a>
 
 
-</main>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <div class = "navbar navbar-default navbar-static-bottom">
+        <div class = "container">
+          <p class = "navbar-text pull-left">Site built by Mollie Ann Stein</p>
+        </div>
+    </div>
+
+
+  </body>
+</html>
+
+

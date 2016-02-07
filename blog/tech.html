@@ -1,58 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
-    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
-
-    <title>Post 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "../css/bootstrap.min.css" rel= "stylesheet" type = "text/css">
+    <link href = "../css/styles.css" rel= "stylesheet" type = "text/css">
+    <title>Tech</title>
 </head>
 
 <body>
+<div class="navbar navbar-default navbar-static-top">
+        <div class = "container">
+          <div class = "navbar-header"><a href = "../index.html" class = "navbar-brand">The Blonde Coder</a>
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+            </button>
+           </div>
+            <div class = "collapse navbar-collapse .navHeaderCollapse">
+              <ul class = "nav navbar-nav navbar-right">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li class = "active"><a href="../blog-index.html">Blog</a></li>
+                <li><a href="../project-index.html">Portfolio</a></li>
+                <li><a href="#contact" data-toggle = "modal">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
 
-<header>
-  <img id="logo" src="../imgs/logo.png" alt="Logo">
-  <div class="script">Building a website is easy, designing one takes skill</div>
-  <div class="line"></div>
-</header>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-lg-9">
+      <div class = "panel panel-default">
+        <div class = "panel-body"
+          <div class="page-header">
+            <h3>What is Rails? <br><small><i>February 1, 2016</i></small></h3>
 
-<!--sidebar for site navigation-->
-    <ul class="menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About Me</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="../projects/index.html">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+            <p>From my previous blog posts, you have a general idea of what Ruby is and looks like from simple Ruby snippets. But, what about Ruby on Rails? Is it related to Ruby? Or is it just another JavaScript/Java mix up? Well, let's discuss them separately and then bring both together.</p>
 
-<!--This will be my post information-->
-    <article>
-      <p class="heading">What is Rails?</p>
-      <i>February 1, 2016</i>
-        <p>From my previous blog posts, you have a general idea of what Ruby is and looks like from simple Ruby snippets. But, what about Ruby on Rails? Is it related to Ruby? Or is it just another JavaScript/Java mix up? Well, let's discuss them separately and then bring both together.</p>
-        <p>Ruby is one of many different programming languages. Ruby is very powerful when viewed as a general-purpose programming language. However, when compared side by side Rails, it is not ranked as highly.
-        </p>
-        <p>I like to think of Rails as an improvement or add-on to Ruby. Technicall speaking, it is a software library that enhances and extends the Ruby programming language. For example, when you purchase a car, you can choose to go with the standard model or add on and enhance that model. Some choices include media packages, gps software, and many other capabilities. Rails can be thought of as those additional packages. Rails is a package library, or collection of software tools, installed using the command-line interface.</p>
-        <p>Rails takes the powerful programming language, Ruby, and combines it with HTML, CSS, and JavaScript, in order to create a web application. This composition of languages, Rails, is considered a server-side web framework. Wheras Ruby alone is jsut a backend language that helps build Rails.</p>
-        <p>To explore Ruby on Rails further, visit the <a href="rubyonrails.org">official website!</a></p>
-    </article>
+            <p>Ruby is one of many different programming languages. Ruby is very powerful when viewed as a general-purpose programming language. However, when compared side by side Rails, it is not ranked as highly.</p>
+
+            <p>I like to think of Rails as an improvement or add-on to Ruby. Technically speaking, it is a software library that enhances and extends the Ruby programming language. For example, when you purchase a car, you can choose to go with the standard model or add on and enhance that model. Some choices include media packages, gps software, and many other capabilities. Rails can be thought of as those additional packages. Rails is a package library, or collection of software tools, installed using the command-line interface.</p>
+
+            <p>Rails takes the powerful programming language, Ruby, and combines it with HTML, CSS, and JavaScript, in order to create a web application. This composition of languages, Rails, is considered a server-side web framework. Wheras Ruby alone is jsut a backend language that helps build Rails.</p>
+
+            <p>To explore Ruby on Rails further, visit the <a href="http://rubyonrails.org">official website!</a></p>
+
+        </div>
+      </div>
+    </div>
+
+<div class = "col-lg-3">
+      <div class = "page-header">
+        <h4>Blog Posts</h4>
+      </div>
+
+      <div class = "list-group">
+
+        <a href = "git.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Git</h4>
+            <p>Learn about Git!</p>
+        </a>
+      <a href = "css-concepts.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">CSS Concepts</h4>
+            <p>Learn about CSS Concepts!</p>
+        </a>
+      <a href = "arrays-hashes.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Arrays vs. Hashes</h4>
+            <p>Learn about the difference between Arrays and Hashes!</p>
+        </a>
+      <a href = "enumerable-methods.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Enumerable Methods</h4>
+            <p>Learn about Enumerable Methods!</p>
+        </a>
+      <a href = "ruby-classes.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Ruby Classes</h4>
+            <p>Learn about Ruby Classes!</p>
+        </a>
+      <a href = "JavaScript.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">JavaScript</h4>
+            <p>Learn about JavaScript!</p>
+        </a>
+      <a href = "tech.html" class = "list-group-item active">
+          <h4 class = "list-group-item-heading">What is Rails?</h4>
+            <p>Learn about Ruby and Ruby on Rails!</p>
+      </a>
 
 
-<!--sidebar displayed on every page-->
+      </div>
+    </div>
+  </div>
+</div>
 
-    <section>
-      <aside>
-      <p class="title">All Posts</p>
-        <ul class="post">
-          <li><a href="git.html">Git</a></li>
-          <li><a href="css-concepts.html">CSS Concepts</a></li>
-          <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
-          <li><a href="enumerable-methods.html">Enumerable Methods</a></li>
-          <li><a href="ruby-classes.html">Ruby Classes</a></li>
-          <li><a href="JavaScript.html">JavaScript vs. Ruby</a></li>
-          <li><a href="tech.html">What is Rails?</a></li>
-        </ul>
-      </aside>
-    </section>
+
+
+
+    <div class = "navbar navbar-default navbar-static-bottom">
+        <div class = "container">
+          <p class = "navbar-text pull-left">Site built by Mollie Ann Stein</p>
+        </div>
+    </div>
+
 
   </body>
 </html>
+
+

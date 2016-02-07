@@ -1,60 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
-    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
-
-    <title>About Me</title>
+    <title>The Blonde Coder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "css/bootstrap.min.css" rel= "stylesheet" type = "text/css">
+    <link href = "css/styles.css" rel= "stylesheet" type = "text/css">
 </head>
 
 <body>
 
-<header>
-  <img id="logo" src="../imgs/logo.png" alt="Logo">
-  <div class="script">Building a website is easy, designing one takes skill</div>
-  <div class="line"></div>
-</header>
+      <div class="navbar navbar-default navbar-static-top">
+        <div class = "container">
+          <div class = "navbar-header"><a href = "index.html" class = "navbar-brand">The Blonde Coder</a>
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+            </button>
+           </div>
+            <div class = "collapse navbar-collapse .navHeaderCollapse">
+              <ul class = "nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li class = "active"><a href="about.html">About Me</a></li>
+                <li><a href="blog-index.html">Blog</a></li>
+                <li><a href="project-index.html">Portfolio</a></li>
+                <li><a href="#contact" data-toggle = "modal">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
 
-<!--sidebar for site navigation-->
-    <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="projects/index.html">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-lg-12">
+      <div class = "panel panel-default">
+        <div class = "panel-body"
+          <div class="page-header">
+            <h3>Getting to know me...</h3>
 
-<!--This will be my post information-->
-    <article>
-      <p class="heading">Getting to know me...</p>
-        <h4>Born & raised:</h4>
-        <p>Long Island, New York</p>
-        <h4>Interests & Hobbies</h4>
-        <p>I am a very active person and ironically love to cook and bake. My main interests include traveling, running, cooking, baking, hiking and yoga. I adopted a black lab/pit mix a year and a half ago. Charlie is the love of my life and I often question who rescued whom. She is most likely always by my side, whether it be relaxing or taking long walks outside.
-        </p>
-        <h4>Educational Experiences</h4>
-        <p>I graduated Fordham University, Gabelli School of Business in May 2015 with a bachelor's degree in Accounting Information Systems. While at Fordham, I had the opportunity to study in London, England during the Fall of 2013. In that time I was able to explore the culture and business of the UK. In my free time, I took advantage of traveling to many different countries and cities throughout Europe.
-        </p>
-        <h4>Fun Facts</h4>
-        <p>One of the quirkiest things about me is my disgust towards purple. There is no rhyme or reason to it, but I do not own, wear, and try to avoid touching anything purple.</p>
-    </article>
+            <h4>Born & raised:</h4>
+            <p>Long Island, New York</p>
+            <img src = "imgs/li.png" alt = "Long Island Map">
+            <h4>Interests & Hobbies</h4>
+            <p>I am a very active person and ironically love to cook and bake. My main interests include traveling, running, cooking, baking, hiking and yoga. I adopted a black lab/pit mix, whom I named Charlie, a year and a half ago. Charlie is the love of my life and I often question who rescued whom. She is most likely always by my side, whether it be relaxing or taking long walks outside.
+            </p>
+            <h4>Educational Experiences</h4>
+            <p>I graduated <a href="https://www.google.com/maps/place/Gabelli+School+of+Business/@40.861967,-73.885297,15z/data=!4m2!3m1!1s0x0:0xf4f7c184751b6b9f">Fordham University, Gabelli School of Business</a> in May 2015 with a bachelor's degree in Accounting Information Systems. While at Fordham, I had the opportunity to study in London, England during the Fall of 2013. In that time I was able to explore the culture and business of the UK. In my free time, I took advantage of traveling to many different countries and cities throughout Europe.
+            </p>
+            <h4>Fun Facts</h4>
+            <p>One of the quirkiest things about me is my disgust towards purple. There is no rhyme or reason to it, but I do not own, wear, and try to avoid touching anything purple.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<!--sidebar displayed on every page-->
+    <div class = "navbar navbar-default navbar-static-bottom">
+        <div class = "container">
+          <p class = "navbar-text pull-left">Site built by Mollie Ann Stein</p>
+        </div>
+    </div>
 
-    <section>
-      <aside>
-      <p class="title">All Posts</p>
-        <ul class="post">
-          <li><a href="blog/git.html">Git</a></li>
-          <li><a href="blog/css-concepts.html">CSS Concepts</a></li>
-          <li><a href="blog/arrays-hashes.html">Arrays and Hashes</a></li>
-          <li><a href="blog/enumerable-methods.html">Enumerable Methods</a></li>
-          <li><a href="blog/ruby-classes.html">Ruby Classes</a></li>
-          <li><a href="blog/JavaScript.html">JavaScript vs. Ruby</a></li>
-          <li><a href="blog/tech.html">What is Rails?</a></li>
-        </ul>
-      </aside>
-    </section>
+    <div class = "modal fade" id = "contact" role = "dialog">
+      <div class = "modal-dialog">
+        <div class = "modal-content">
+          <div class = "modal-header">
+            <h3>Social Media</h3>
+          </div>
+          <div class = "modal-body text-center">
+            <p>For any questions, comments, and/or concerns, contact me through any of the links below!</p>
+            <ul class = "list-unstyled">
 
-</body>
+              <li><a href="mailto:mastein109@gmail.com?Subject=" target = "_top"><img class="icon" src="imgs/gmail.png" alt="Gmail"></a></li>
+
+              <li><a href="https://www.linkedin.com/in/molliestein" target = "_blank"><img class="icon" src="imgs/linkedin.png" alt="linkedin"></a></li>
+
+              <li><a href="https://github.com/mastein109" target = "_blank"><img class="icon" src="imgs/github.png" alt="github"></a></li>
+
+            </ul>
+          </div>
+          <div class = "modal-footer">
+            <a class = "btn btn-default" data-dismiss= "modal">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+  </body>
 </html>

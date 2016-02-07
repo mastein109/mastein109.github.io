@@ -1,69 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
-    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
-    <link type="text/css" rel="stylesheet" href="../stylesheets/week2.css">
-
-    <title>Post 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "../css/bootstrap.min.css" rel= "stylesheet" type = "text/css">
+    <link href = "../css/styles.css" rel= "stylesheet" type = "text/css">
+    <title>CSS Concepts</title>
 </head>
 
 <body>
+<div class="navbar navbar-default navbar-static-top">
+        <div class = "container">
+          <div class = "navbar-header"><a href = "../index.html" class = "navbar-brand">The Blonde Coder</a>
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+            </button>
+           </div>
+            <div class = "collapse navbar-collapse .navHeaderCollapse">
+              <ul class = "nav navbar-nav navbar-right">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li class = "dropdown">
+                <li class = "active"><a href="../blog-index.html">Blog</a></li>
+                <li><a href="../project-index.html">Portfolio</a></li>
+                <li><a href="#contact" data-toggle = "modal">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
 
-<header>
-  <img id="logo" src="../imgs/logo.png" alt="Logo">
-  <div class="script">Building a website is easy, designing one takes skill</div>
-  <div class="line"></div>
-</header>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-lg-9">
+      <div class = "panel panel-default">
+        <div class = "panel-body"
+          <div class="page-header">
+            <h3>All About That Positioning! <br><small><i>December 20, 2015</i></small></h3>
 
-<!--sidebar for site navigation-->
-    <ul class="menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About Me</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="../projects/index.html">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+            <p>The key to positioning in CSS is understanding the most basic concept; every single element within a page is a block. When you can envision a rectangle of pixels for each element, positioning becomes a lot easier. There are several different position attributes to learn about.</p>
 
-<!--This will be my post information-->
-   <content>
-    <article>
-      <p class="heading">All About That Positioning!</p>
-      <i>December 20, 2015</i>
-        <p>The key to positioning in CSS is understanding the most basic concept; every single element within a page is a block. When you can envision a rectangle of pixels for each element, positioning becomes a lot easier. There are several different position attributes to learn about.</p>
 
-        <h3>1. Static</h3>
-          <p>If you do not declare a position, the element will automatically asume the <b>default position, static.</b> Static doesn't really tell an element to act any different than to flow into the page as it normally would. This attribute becomes useful when you are trying to remove other positioning stuck to this element.</p>
+            <h4>1. Static</h4>
+              <p>If you do not declare a position, the element will automatically asume the <b>default position, static.</b> Static doesn't really tell an element to act any different than to flow into the page as it normally would. This attribute becomes useful when you are trying to remove other positioning stuck to this element.</p>
 
-        <h3>2. Relative</h3>
-          <p>Contrary to popular belief, this type of positioning just means <b>relative to itself.</b> This type of position can become confusing. If you do not declare other attributes to the relative element, it will be the same as leaving it static. However, if you add top, bottom, left, or right, the element will adjust accordingly to where it would normally be positioned. For examplee, if you set an element to position: relative; and left: 10px; the element will move 10px to the right of where it normally would sit.</p>
-        <h3>3. Absolute</h3>
-          <p>This type of positioning is very powerful and allows you to place any element exactly where you want it on a page. In addition to setting the position to absolute, you must add top, bottom, left, and right attributes to declare where you want the element placed. Although this is a very beneficial type of positioning, it comes along with cons. When you set an element to absolute, that element is removed from the natrual flow of elements within a page. It is not affected by other elements, nor does it affect any other elements. If this type of positioning is misused, it can disturb the whole entire flow of your site.</p>
-        <h3>4. Fixed</h3>
-          <p>This attribute to positioning is the least commonly used, but can be very helpful under certain circumstances. Fixed positioning will set an element relevant to the viewport. The viewport is a part of the webpage that stays in the same place, no matter what. For example, if a side menu is fixed on a page, it will stay fixed on the side and move with you when you scroll through. Although this is a neat concept and allows for certain elements to remain at all times, it can conflict with other elements. Depending on the size of a browser, a fixed element may overlap with other elements making it hard to read. In conclusion, if you choose fixed positioning, it is important to be cautious and test the page among several instances.</p>
-        <h3>Other Resources</h3>
-          <ul class="post">
-            <li><a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/">Learn CSS Positioning in 10 Steps</a></li>
-          </ul>
-    </article>
-</content>
+            <h4>2. Relative</h4>
+              <p>Contrary to popular belief, this type of positioning just means <b>relative to itself.</b> This type of position can become confusing. If you do not declare other attributes to the relative element, it will be the same as leaving it static. However, if you add top, bottom, left, or right, the element will adjust accordingly to where it would normally be positioned. For examplee, if you set an element to position: relative; and left: 10px; the element will move 10px to the right of where it normally would sit.</p>
+            <h4>3. Absolute</h4>
+              <p>This type of positioning is very powerful and allows you to place any element exactly where you want it on a page. In addition to setting the position to absolute, you must add top, bottom, left, and right attributes to declare where you want the element placed. Although this is a very beneficial type of positioning, it comes along with cons. When you set an element to absolute, that element is removed from the natrual flow of elements within a page. It is not affected by other elements, nor does it affect any other elements. If this type of positioning is misused, it can disturb the whole entire flow of your site.</p>
+            <h4>4. Fixed</h4>
+              <p>This attribute to positioning is the least commonly used, but can be very helpful under certain circumstances. Fixed positioning will set an element relevant to the viewport. The viewport is a part of the webpage that stays in the same place, no matter what. For example, if a side menu is fixed on a page, it will stay fixed on the side and move with you when you scroll through. Although this is a neat concept and allows for certain elements to remain at all times, it can conflict with other elements. Depending on the size of a browser, a fixed element may overlap with other elements making it hard to read. In conclusion, if you choose fixed positioning, it is important to be cautious and test the page among several instances.</p>
+            <h4>Other Resources</h4>
+              <p><a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/">Learn CSS Positioning in 10 Steps</a>
 
-<!--sidebar displayed on every page-->
+        </div>
+      </div>
+    </div>
 
-    <section>
-      <aside>
-      <p class="title">All Posts</p>
-        <ul class="post">
-          <li><a href="git.html">Git</a></li>
-          <li><a href="css-concepts.html">CSS Concepts</a></li>
-          <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
-          <li><a href="enumerable-methods.html">Enumerable Methods</a></li>
-          <li><a href="ruby-classes.html">Ruby Classes</a></li>
-          <li><a href="JavaScript.html">JavaScript vs. Ruby</a></li>
-          <li><a href="tech.html">What is Rails?</a></li>
-        </ul>
-      </aside>
-    </section>
+<div class = "col-lg-3">
+      <div class = "page-header">
+        <h4>Blog Posts</h4>
+      </div>
+
+      <div class = "list-group">
+
+        <a href = "git.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Git</h4>
+            <p>Learn about Git!</p>
+        </a>
+      <a href = "css-concepts.html" class = "list-group-item active">
+          <h4 class = "list-group-item-heading">CSS Concepts</h4>
+            <p>Learn about CSS Concepts!</p>
+        </a>
+      <a href = "arrays-hashes.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Arrays vs. Hashes</h4>
+            <p>Learn about the difference between Arrays and Hashes!</p>
+        </a>
+      <a href = "enumerable-methods.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Enumerable Methods</h4>
+            <p>Learn about Enumerable Methods!</p>
+        </a>
+      <a href = "ruby-classes.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Ruby Classes</h4>
+            <p>Learn about Ruby Classes!</p>
+        </a>
+      <a href = "JavaScript.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">JavaScript</h4>
+            <p>Learn about JavaScript!</p>
+        </a>
+      <a href = "tech.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">What is Rails?</h4>
+            <p>Learn about Ruby and Ruby on Rails!</p>
+      </a>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <div class = "navbar navbar-default navbar-static-bottom">
+        <div class = "container">
+          <p class = "navbar-text pull-left">Site built by Mollie Ann Stein</p>
+        </div>
+    </div>
+
 
   </body>
-</html>
+

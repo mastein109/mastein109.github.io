@@ -1,81 +1,122 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
-  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
-
-  <title>Post 6</title>
-  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "../css/bootstrap.min.css" rel= "stylesheet" type = "text/css">
+    <link href = "../css/styles.css" rel= "stylesheet" type = "text/css">
+    <title>JavaScript</title>
 </head>
 
 <body>
+<div class="navbar navbar-default navbar-static-top">
+        <div class = "container">
+          <div class = "navbar-header"><a href = "../index.html" class = "navbar-brand">The Blonde Coder</a>
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+            </button>
+           </div>
+            <div class = "collapse navbar-collapse .navHeaderCollapse">
+              <ul class = "nav navbar-nav navbar-right">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li class = "active"><a href="../blog-index.html">Blog</a></li>
+                <li><a href="../project-index.html">Portfolio</a></li>
+                <li><a href="#contact" data-toggle = "modal">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
 
-<header>
-  <img id="logo" src="../imgs/logo.png" alt="Logo">
-  <div class="script">Building a website is easy, designing one takes skill</div>
-  <div class="line"></div>
-</header>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-lg-9">
+      <div class = "panel panel-default">
+        <div class = "panel-body"
+          <div class="page-header">
+            <h3>Same Concept, Different Name?<br><small><i>January 21, 2016</i></small></h3>
 
-<!--sidebar for site navigation-->
-    <ul class="menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About Me</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="../projects/index.html">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+          <p>Ruby and JavaScript are both coding languages, so the syntax must be the same, Right?!... Unfortunately, that is way wrong!! For four weeks I learned, researched, and explored Ruby. When I finally became comfortable with Ruby, I began learning JavaScript. As you can guess from my first statement, it wasn't exactly smooth sailing. Learning Ruby and then JavaScript was in some ways a catch 22. The one advantage to this order was understanding the general concepts in Ruby and recognizing comparisons to JavaScript concepts. However, shortly after things became confusing. While reading about JavaScript, I immediately started seeing connections to Ruby. Don't be confused though. The connection can only be made between meaning and purpose. Ruby and JavaScript become two different worlds when comparing syntax.</p>
 
-<!--This will be my post information-->
-<content>
-<article>
-      <p class="heading">Same Concept, Different Name?</p>
-      <i>January 21, 2016</i>
-      <p>
-          Ruby and JavaScript are both coding languages, so the syntax must be the same, Right?!... Unfortunately, that is way wrong!! For four weeks I learned, researched, and explored Ruby. When I finally became comfortable with Ruby, I began learning JavaScript. As you can guess from my first statement, it wasn't exactly smooth sailing. Learning Ruby and then JavaScript was in some ways a catch 22. The one advantage to this order was understanding the general concepts in Ruby and recognizing comparisons to JavaScript concepts. However, shortly after things became confusing. While reading about JavaScript, I immediately started seeing connections to Ruby. Don't be confused though. The connection can only be made between meaning and purpose. Ruby and JavaScript become two different worlds when comparing syntax.
-      </p>
-      <p>
-          One difference in syntax, but similarity in meaning is found when comparing methods in Ruby to functions in JavaScript. Methods and functions are generally the same thing, however they are defined differently.
-      </p>
-      <p>
-          Ruby methods:
-            <script src="https://gist.github.com/mastein109/fcc94f48de3bad73d456.js"></script>
-      </p>
-      <p>
-          JavaScript functions:
-            <script src="https://gist.github.com/mastein109/d2a6b07799d0519c42c0.js"></script>
-      </p>
-      <p>
-          Looking at these two examples, the syntax is completely different besides the message, "hello", which each are displaying. However, both the Ruby method and JavaScript function do the same thing.
-        </p>
-        <p>
-          As for the Ruby example, I am defining a method called <code>greeting</code> by using the keyword <code>def</code>. Then I am telling the interpreter to put "hello" on the output screen. Then, of course I use the keyword <code>end</code> to close and finish my method.
-      </p>
-      <p>
-          Next we come to the JavaScript example. First, I am defining a function called <code>hello()</code> and opening that function with a left curly brace({). The parentheses that follow my function name are there to tell the computer there are no arguments or parameters. However, in other functions you may see parameters defined within these parentheses. Next, I am telling the computer to log the word "hello" to the console. Finally, I close and end my function the same way I opened it with a right curly brace (}).
-      </p>
-      <p>
-          This is just one of the several ways Ruby and JavaScript fundamentally implement some program differently.
-      </p>
+          <p>One difference in syntax, but similarity in meaning is found when comparing methods in Ruby to functions in JavaScript. Methods and functions are generally the same thing, however they are defined differently.</p>
 
-  </article>
-</content>
+          <p>Ruby methods:
+<script src="https://gist.github.com/mastein109/fcc94f48de3bad73d456.js"></script>
+          </p>
 
+          <p>JavaScript functions:
+<script src="https://gist.github.com/mastein109/d2a6b07799d0519c42c0.js"></script>
+          </p>
 
-<!--sidebar displayed on every page-->
+          <p>Looking at these two examples, the syntax is completely different besides the message, "hello", which each are displaying. However, both the Ruby method and JavaScript function do the same thing.</p>
 
-    <section>
-      <aside>
-      <p class="title">All Posts</p>
-        <ul class="post">
-          <li><a href="git.html">Git</a></li>
-          <li><a href="css-concepts.html">CSS Concepts</a></li>
-          <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
-          <li><a href="enumerable-methods.html">Enumerable Methods</a></li>
-          <li><a href="ruby-classes.html">Ruby Classes</a></li>
-          <li><a href="JavaScript.html">JavaScript vs. Ruby</a></li>
-          <li><a href="tech.html">What is Rails?</a></li>
-        </ul>
-      </aside>
-    </section>
+          <p>As for the Ruby example, I am defining a method called <code>greeting</code> by using the keyword <code>def</code>. Then I am telling the interpreter to put "hello" on the output screen. Then, of course I use the keyword <code>end</code> to close and finish my method.</p>
+
+          <p>Next we come to the JavaScript example. First, I am defining a function called <code>hello()</code> and opening that function with a left curly brace <code>{</code>. The parentheses that follow my function name are there to tell the computer there are no arguments or parameters. However, in other functions you may see parameters defined within these parentheses. Next, I am telling the computer to log the word "hello" to the console. Finally, I close and end my function the same way I opened it with a right curly brace <code>}</code>.</p>
+
+          <p>This is just one of the several ways Ruby and JavaScript fundamentally implement some program differently.</p>
+
+        </div>
+      </div>
+    </div>
+
+   <div class = "col-lg-3">
+      <div class = "page-header">
+        <h4>Blog Posts</h4>
+      </div>
+
+      <div class = "list-group">
+
+        <a href = "git.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Git</h4>
+            <p>Learn about Git!</p>
+        </a>
+      <a href = "css-concepts.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">CSS Concepts</h4>
+            <p>Learn about CSS Concepts!</p>
+        </a>
+      <a href = "arrays-hashes.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Arrays vs. Hashes</h4>
+            <p>Learn about the difference between Arrays and Hashes!</p>
+        </a>
+      <a href = "enumerable-methods.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Enumerable Methods</h4>
+            <p>Learn about Enumerable Methods!</p>
+        </a>
+      <a href = "ruby-classes.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Ruby Classes</h4>
+            <p>Learn about Ruby Classes!</p>
+        </a>
+      <a href = "JavaScript.html" class = "list-group-item active">
+          <h4 class = "list-group-item-heading">JavaScript</h4>
+            <p>Learn about JavaScript!</p>
+        </a>
+      <a href = "tech.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">What is Rails?</h4>
+            <p>Learn about Ruby and Ruby on Rails!</p>
+      </a>
 
 
-</main>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <div class = "navbar navbar-default navbar-static-bottom">
+        <div class = "container">
+          <p class = "navbar-text pull-left">Site built by Mollie Ann Stein</p>
+        </div>
+    </div>
+
+
+  </body>
+</html>
+
+
+
+
+
+

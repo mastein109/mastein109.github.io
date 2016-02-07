@@ -1,81 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
-    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
-
-    <title>Post 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "../css/bootstrap.min.css" rel= "stylesheet" type = "text/css">
+    <link href = "../css/styles.css" rel= "stylesheet" type = "text/css">
+    <title>Arrays and Hashes</title>
 </head>
 
 <body>
+<div class="navbar navbar-default navbar-static-top">
+        <div class = "container">
+          <div class = "navbar-header"><a href = "../index.html" class = "navbar-brand">The Blonde Coder</a>
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+            </button>
+           </div>
+            <div class = "collapse navbar-collapse .navHeaderCollapse">
+              <ul class = "nav navbar-nav navbar-right">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li class = "active"><a href="../blog-index.html">Blog</a></li>
+                <li><a href="../project-index.html">Portfolio</a></li>
+                <li><a href="#contact" data-toggle = "modal">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
 
-<header>
-  <img id="logo" src="../imgs/logo.png" alt="Logo">
-  <div class="script">Building a website is easy, designing one takes skill</div>
-  <div class="line"></div>
-</header>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-lg-9">
+      <div class = "panel panel-default">
+        <div class = "panel-body"
+          <div class="page-header">
+            <h3>Hash or Array? <br><small>January 4, 2016</small></h3>
 
-<!--sidebar for site navigation-->
-    <ul class="menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About Me</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="../projects/index.html">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+            <p>Hashes and arrays are similar in the most general terms of being data structures. In addition, they both include values that include strings, integers, or floats. However, they still have key differences. For instance, brackets <code> [] </code> are used to index into an array, while hashes use braces <code> {} </code>.</p>
 
-<!--This will be my post information-->
-<content>
-    <article>
-      <p class="heading">Hash or Array?</p>
-      <i>January 4, 2015</i>
-        <p>Hashes and arrays are similar in the most general terms of being data structures. In addition, they both include values that include strings, integers, or floats. However, they still have key differences. For instance, brackets [] are used to index into an array, while hashes use braces {}.</p>
-      <section class="column-1">
-        <h3>Arrays</h3>
-          <ul>
-            <li>An array stores elements one after the other and can be accessed by index integers.</li>
-            <li>Arrays can be created by using the array class, the initializer, or by adding elements as you go along.</li>
-            <li>The first array element, if one, is located at index[0] and the last element is located at array.length minus one.</li>
-            <li>Arrays can be modified by simply replacing an element with another.</li>
-            <li>Arrays are specifically indexed by integers.</li>
-            <li>The size can of an array can be set when you create an name = Array.new().</li>
-            <li>Example: new_array[0] = "string" <br>
-                         new_array[3] = 35 </li>
-          </ul>
-      </section>
-      <section class="column-2">
-        <h3>Hashes</h3>
-          <ul>
-            <li>A hash is a more optimized collection, when compared to an array.</li>
-            <li>Hashes can be created many ways like arrays, but the most common would be calling name = Hash.new().</li>
-            <li>Hashes are unique in that its elements are key-value pairs.</li>
-            <li>Unlike arrays, hashes can be indexed by any object type.</li>
-            <li>Example: new_hash = { <br>
-                            "key" => value, <br>
-                            "key" => value <br>
-                          } </li>
-          </ul>
-      </section>
-    </article>
-</content>
+            <h4>Arrays</h4>
+              <ul>
+                <li>An array stores elements one after the other and can be accessed by index integers.</li>
+                <li>Arrays can be created by using the array class, the initializer, or by adding elements as you go along.</li>
+                <li>The first array element, if one, is located at <code>index[0]</code> and the last element is located at <code>array.length - 1</code>.</li>
+                <li>Arrays can be modified by simply replacing an element with another.</li>
+                <li>Arrays are specifically indexed by integers.</li>
+                <li>The size can of an array can be set when you create an <code>name = Array.new()</code>.</li>
+                <li>Example: <code>new_array[0] = "string"
+                                  new_array[3] = 35
+                             </code>
+                </li>
+              </ul>
 
-<!--sidebar displayed on every page-->
+            <h4>Hashes</h4>
+              <ul>
+                <li>A hash is a more optimized collection, when compared to an array.</li>
+                <li>Hashes can be created many ways like arrays, but the most common would be calling <code>name = Hash.new()</code>.</li>
+                <li>Hashes are unique in that its elements are key-value pairs.</li>
+                <li>Unlike arrays, hashes can be indexed by any object type.</li>
+                <li>Example: <code>new_hash = {
+                            "key" => value,
+                            "key" => value
+                          }
+                        </code>
+                </li>
+              </ul>
 
-    <section>
-      <aside>
-      <p class="title">All Posts</p>
-        <ul class="post">
-          <li><a href="git.html">Git</a></li>
-          <li><a href="css-concepts.html">CSS Concepts</a></li>
-          <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
-          <li><a href="enumerable-methods.html">Enumerable Methods</a></li>
-          <li><a href="ruby-classes.html">Ruby Classes</a></li>
-          <li><a href="JavaScript.html">JavaScript vs. Ruby</a></li>
-          <li><a href="tech.html">What is Rails?</a></li>
-        </ul>
-      </aside>
-    </section>
+          </div>
+        </div>
+      </div>
+
+
+<div class = "col-lg-3">
+      <div class = "page-header">
+        <h4>Blog Posts</h4>
+      </div>
+
+      <div class = "list-group">
+
+        <a href = "git.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Git</h4>
+            <p>Learn about Git!</p>
+        </a>
+      <a href = "css-concepts.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">CSS Concepts</h4>
+            <p>Learn about CSS Concepts!</p>
+        </a>
+      <a href = "arrays-hashes.html" class = "list-group-item active">
+          <h4 class = "list-group-item-heading">Arrays vs. Hashes</h4>
+            <p>Learn about the difference between Arrays and Hashes!</p>
+        </a>
+      <a href = "enumerable-methods.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Enumerable Methods</h4>
+            <p>Learn about Enumerable Methods!</p>
+        </a>
+      <a href = "ruby-classes.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">Ruby Classes</h4>
+            <p>Learn about Ruby Classes!</p>
+        </a>
+      <a href = "JavaScript.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">JavaScript</h4>
+            <p>Learn about JavaScript!</p>
+        </a>
+      <a href = "tech.html" class = "list-group-item">
+          <h4 class = "list-group-item-heading">What is Rails?</h4>
+            <p>Learn about Ruby and Ruby on Rails!</p>
+      </a>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <div class = "navbar navbar-default navbar-static-bottom">
+        <div class = "container">
+          <p class = "navbar-text pull-left">Site built by Mollie Ann Stein</p>
+        </div>
+    </div>
 
 
   </body>
 </html>
+
