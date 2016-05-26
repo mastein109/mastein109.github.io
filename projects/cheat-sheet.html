@@ -1,53 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
-  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
-
-  <title>Cheat Sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "../css/bootstrap.min.css" rel= "stylesheet" type = "text/css">
+    <link href = "../css/styles.css" rel= "stylesheet" type = "text/css">
+    <title>Cheat Sheets</title>
 </head>
 
 <body>
 
-  <header>
-    <img id="logo" src="../imgs/logo.png" alt="the blonde coder">
-    <div class="script">Building a website is easy, designing one takes skill</div>
-    <div class="line"></div>
-  </header>
+  <div class="navbar navbar-default navbar-static-top">
+    <div class = "container">
+      <div class = "navbar-header"><a href = "index.html" class = "navbar-brand">The Blonde Coder</a>
+        <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+        </button>
+       </div>
+        <div class = "collapse navbar-collapse .navHeaderCollapse">
+          <ul class = "nav navbar-nav navbar-right">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About Me</a></li>
+            <li><a href="../blog-index.html">Blog</a></li>
+            <li class = "../active"><a href="project-index.html">Portfolio</a></li>
+            <li><a href="#contact" data-toggle = "modal">Contact</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
 
-  <ul class="menu">
-      <li><a href="../index.html">Home</a>
-      <li><a href="../about.html">About Me</a>
-      <li><a href="#">Experience</a>
-      <li><a href="index.html">Portfolio</a>
-      <li><a href="#">Contact</a>
-  </ul>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-lg-12">
+      <div class = "panel panel-default">
+      <div class = "panel-body">
+        <div class = "page-header">
+          <h2>Cheat Sheets</h2>
+        </div>
+        <div class = "list-group">
+          <div class = "list-group-item">
+            <h3 class = "list-group-item-heading" id="htmlbutton" href="#" onclick=revealhtml();>HTML</h3>
+            <p> <img class="img-responsive" id="html" src="../imgs/html-cheat.png" alt="HTML cheat sheet">
+            </p>
+          </div>
+          <div class = "list-group-item">
+            <h3 class = "list-group-item-heading" id="cssbutton" href="#" onclick=revealcss();>CSS Positioning</h3>
+            <p> <img class="img-responsive" id="html" src="../imgs/css-cheat.pdf" alt="CSS cheat sheet">
+            </p>
+          </div>
+          <div class = "list-group-item">
+            <h3 class = "list-group-item-heading" id="rubybutton" href="#" onclick=revealruby();>Ruby</h3>
+            <p> <img class="img-responsive" id="html" src="../imgs/ruby-cheat.png" alt="Ruby cheat sheet">
+            </p>
+          </div>
+          <div class = "list-group-item">
+            <h3 class = "list-group-item-heading" id="jsbutton" href="#" onclick=revealjs();>JavaScript</h3>
+            <p> <img class="img-responsive" id="html" src="../imgs/JS-cheat.png" alt="JavaScript cheat sheet">
+            </p>
+          </div>
+          <div class = "list-group-item">
+            <h3 class = "list-group-item-heading" id="gitbutton" href="#" onclick=revealgit();>Git</h3>
+            <p> <img class="img-responsive" id="html" src="../imgs/git-cheat.png" alt="Git cheat sheet">
+            </p>
+          </div>
+          <div class = "list-group-item">
+            <h3 class = "list-group-item-heading" id="sqlbutton" href="#" onclick=revealsql();>SQL</h3>
+            <p> <img class="img-responsive" id="html" src="../imgs/sql-cheat.png" alt="SQL cheat sheet">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<content>
-  <article>
-  <p class="heading">Cheat Sheets</p>
-    <section class="menu">
-     <nav>
-        <ol>
-          <li id="htmlbutton" href="#" onclick=revealhtml();>HTML</li>
-          <br> <img id="html" src="../imgs/html-cheat.png" alt="HTML cheat sheet">
-          <li id="cssbutton" href="#" onclick=revealcss();>CSS Positioning</li>
-          <br> <img id="html" src="../imgs/css-cheat.pdf" alt="CSS cheat sheet">
-          <li id="rubybutton" href="#" onclick=revealruby();>Ruby</li>
-          <br> <img id="html" src="../imgs/ruby-cheat.png" alt="Ruby cheat sheet">
-          <li id="jsbutton" href="#" onclick=revealjs();>JavaScript</li>
-          <br> <img id="html" src="../imgs/JS-cheat.png" alt="JavaScript cheat sheet">
-          <li id="gitbutton" href="#" onclick=revealgit();>Git</li>
-          <br> <img id="html" src="../imgs/git-cheat.png" alt="Git cheat sheet">
-          <li id="sqlbutton" href="#" onclick=revealsql();>SQL</li>
-          <br> <img id="html" src="../imgs/sql-cheat.png" alt="SQL cheat sheet">
-        </ol>
-      </nav>
-    </section>
+
+  <div class = "navbar navbar-default navbar-static-bottom">
+    <div class = "container">
+      <p class = "navbar-text pull-left">Site built by Mollie Ann Stein</p>
+    </div>
+  </div>
 
 
-  </article>
-</content>
 </body>
 
 </html>
